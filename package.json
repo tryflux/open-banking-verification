@@ -1,0 +1,42 @@
+{
+  "name": "open-banking-verification",
+  "version": "1.0.1",
+  "description": "Test open banking JWKS & JWS",
+  "author": "Mark Line <mark@tryflux.com>",
+  "license": "BSD-3-Clause",
+  "keywords": [
+    "open banking",
+    "JWKS",
+    "JWS"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tryflux/open-banking-verification"
+  },
+  "main": "src/index.js",
+  "engines": {
+    "node": ">=12.0.0"
+  },
+  "scripts": {
+    "start": "node src/index.js",
+    "lint": "eslint src; exit 0",
+    "lint:fix": "eslint src --fix; exit 0",
+    "test": "jest"
+  },
+  "devDependencies": {
+    "eslint": "^6.8.0",
+    "eslint-config-standard": "^14.1.1",
+    "eslint-plugin-import": "^2.20.1",
+    "eslint-plugin-jest": "^23.8.2",
+    "eslint-plugin-node": "^11.0.0",
+    "eslint-plugin-prettier": "^3.1.2",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.1",
+    "jest": "^25.2.3",
+    "prettier": "2.0.2"
+  },
+  "dependencies": {
+    "jose": "^1.25.0",
+    "request": "^2.88.2"
+  }
+}
