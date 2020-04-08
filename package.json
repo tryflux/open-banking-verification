@@ -1,11 +1,11 @@
 {
   "name": "open-banking-verification",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Test open banking JWKS & JWS",
-  "author": "Mark Line <mark@tryflux.com>",
+  "author": "Flux Systems Ltd <hello@tryflux.com>",
   "license": "BSD-3-Clause",
   "keywords": [
-    "open banking",
+    "Open Banking",
     "JWKS",
     "JWS"
   ],
@@ -20,8 +20,7 @@
   "scripts": {
     "start": "node src/index.js",
     "lint": "eslint src; exit 0",
-    "lint:fix": "eslint src --fix; exit 0",
-    "test": "jest"
+    "lint:fix": "eslint src --fix; exit 0"
   },
   "devDependencies": {
     "eslint": "^6.8.0",
@@ -32,7 +31,6 @@
     "eslint-plugin-prettier": "^3.1.2",
     "eslint-plugin-promise": "^4.2.1",
     "eslint-plugin-standard": "^4.0.1",
-    "jest": "^25.2.3",
     "prettier": "2.0.2"
   },
   "dependencies": {
