@@ -56,13 +56,7 @@ async function getKeystore(keystoreUrl) {
         return reject(error);
       }
       try {
-        // Note: I'm not pleased with this, but for now it gets the code working again since switching back to RS256 over PS256...
-        const keys = body.keys.map((key) => {
-          // HACK: Alg is being set to "RSA" instead of the specific key algorithm (e.g. "RS256").
-          if(key.alg === "RSA")
-            delete key["alg"];
-          return key;
-        });
+        const keys = body.keys;
         const keystore = jose.JWKS.asKeyStore({keys});
         console.log({ keystore })
         return resolve(keystore);
