@@ -7,7 +7,7 @@ const joseOpts = {
 };
 
 async function checkSignature(signatureToCheck, expectedPayload, keystoreUrl) {
-  // Get the keystore from the keysytore url.
+  // Get the keystore from the keystore url.
   const keystore = await getKeystore(keystoreUrl);
   // Check that the signature is valid.
   const result = await validateSignature(
@@ -32,7 +32,7 @@ async function validateSignature(keystore, expectedPayload, signatureToCheck) {
       'Expected detached payload, but payload was provided in the JWS'
     );
     // Create a JSON-Serialised JWS using the expected payload (from the HTTP Request Body)
-    
+
     const flattened = {
       protected: protectedHeaders,
       payload: expectedPayload,
@@ -57,8 +57,8 @@ async function getKeystore(keystoreUrl) {
       }
       try {
         const keys = body.keys;
-        const keystore = jose.JWKS.asKeyStore({keys});
-        console.log({ keystore })
+        const keystore = jose.JWKS.asKeyStore({ keys });
+        console.log({ keystore });
         return resolve(keystore);
       } catch (error) {
         console.log('failure to load .well-known', error);
