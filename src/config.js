@@ -1,0 +1,6 @@
+module.exports.keystoreUrl =
+  'https://api.test.tryflux.com/auth/.well-known/jwks.json';
+module.exports.sigToCheck =
+  'eyJhbGciOiJSUzI1NiIsImtpZCI6ImpxTDByOW5JTHN1MVZhU0lDLXlnR2xHWklRV2N6dmgyczJkakpoclFlZDQ9IiwidHlwIjoiSk9TRSIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il0sImN0eSI6ImFwcGxpY2F0aW9uL2pzb24ifQ..timpHvpwxP0BWA-kXdMUPAfOW4KJ5PG-kJCHBFS3CJU14hJZEYDlvax_ICs9a8dXKPpVPO4cYUoKQXZAJm426TntUmY5mbJ-C_fKZmKGBCMXZU8BctAblYlPHbLWDceHM52fKqXa5raoCggfRtMP-zSKQLI4zD95jP7upB735zeLHbBAVPfmVnYyhvtQY8o9AxiaIXpOAq7z11WgguIVLLGdvRskWKxS19bD0latkebL0e2mZANR403tobcphcNS6TqcFIHC_pkd2udqlzj4xcOxlpgYtFopiK9bQcnZRzZoWdp7OyX_Mvz9LFht68OxuK42EXaLcMcCfvCL3jqxOg';
+module.exports.expectedPayload =
+  '{"data":[{"id":"143949bf-424d-46e2-9fa5-770e8bc5f670","attributes":{"id":"143949bf-424d-46e2-9fa5-770e8bc5f670","bankTransactionId":"4494d5fc-8b21-4ffc-81b0-8f4dd63dbd3f","collectionNumber":"1423","total":{"amount":1001,"currency":"GBP"},"transactionDate":"2020-03-27T11:25:52.024Z","merchant":{"name":"-"},"notes":[{"description":{"label":"Not a VAT receipt"}}],"payments":[{"type":"card","lastFour":"1234","authCode":"9e422c","paid":{"amount":1001,"currency":"GBP"}}],"items":[{"description":{"label":"3 Legend Fillet Box Meal"},"quantity":2,"amount":{"amount":102,"currency":"GBP"}}]},"type":"receipt"}]}';
