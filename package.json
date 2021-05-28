@@ -34,7 +34,7 @@
     "prettier": "2.0.2"
   },
   "dependencies": {
-    "jose": "^1.25.0",
+    "jose": "^1.28.1",
     "request": "^2.88.2"
   }
 }
